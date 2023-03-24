@@ -1,9 +1,9 @@
 package main
 
-import {
+import (
 	"strconv"
 	"fmt"
-}
+)
 
 /* 1. Definir una función que, dado los coeficientes de un polinomio de grado n (números flotantes)
  muestre por pantalla el polinomio completo,
