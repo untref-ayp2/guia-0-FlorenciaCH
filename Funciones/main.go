@@ -1,7 +1,6 @@
 package main
 
 import (
-	"strconv"
 	"fmt"
 )
 
@@ -22,15 +21,8 @@ func ImprimirPolinomio(coeficientes ...float32) {
 	for i := 0; i < len(coeficientes); i++ {
 
 		if i > 1 {
-			coeficientes[i] = fmt.Sprintf(" %+.1f X**%v ", int(coeficientes[i]), i) // (%+ .1f) Con este ejemplo el input sería "-3.1416" y el output sería "- 3.1 ""
-		} else if i == 1 {
-			coeficientes[i] = fmt.Sprintf(" %+.1f X ", int(coeficientes[i]))
-		} else {
-			coeficientes[i] = fmt.Sprintf(" %.1f ", int(coeficientes[i]))
+			a := coeficientes[i]
+			fmt.Println(int(a))
 		}
-	}
-
-	for _, coeficiente := range arreglo {
-		fmt.Print(coeficiente)
 	}
 }
