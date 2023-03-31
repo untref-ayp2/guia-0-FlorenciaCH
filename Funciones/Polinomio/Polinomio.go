@@ -12,11 +12,11 @@ func ImprimirPolinomio(coeficientes ...float32) {
 
 	for i := 0; i < len(coeficientes); i++ {
 		if i > 1 {
-			fmt.Printf("%+.1f X**%v", coeficientes[i], i) // (%+ .1f) toma solo un decimal.
+			fmt.Printf(" % + .1f X ** %v", coeficientes[i], i) // (%+ .1f) toma solo un decimal.
 		} else if i == 1 {
-			fmt.Printf("%+.1f X", coeficientes[i])
+			fmt.Printf(" % + .1f X ", coeficientes[i])
 		} else {
-			fmt.Printf("%.1f", coeficientes[i])
+			fmt.Printf("% .1f ", coeficientes[i])
 		}
 	}
 }
