@@ -1,5 +1,6 @@
 package main
 
+import Arreglos "guia-0-FlorenciaCH/Funciones/Guia0/Arreglos"
 
 func main() {
 
@@ -11,6 +12,5 @@ func main() {
 	//Estructuras.CalcularProducto(90, 8)
 	//Estructuras.ValidarSiEsPrimo(1)
 	//Estructuras.ValidarSiEsPrimo(11)
-	//Arreglos.SumarEnteros(1, -2, 3, 4, 5, 7, -9)
-	Punteros.
+	Arreglos.SumarEnteros(1, -2, 3, 4, 5, 7, -9)
 }
