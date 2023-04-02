@@ -21,7 +21,9 @@ func CalculoConVectores(A []int, B []int) (suma []int, producto int) {
 		suma[i] = A[i] + B[i]
 		producto = producto + A[i]*B[i]
 	}
+	//fmt.Print(suma, producto)
 	return suma, producto
+
 }
 
 //3. Escribir una función que reciba dos arreglos A y B, de N y M elementos respectivamente que representan conjuntos de enteros y
@@ -38,5 +40,6 @@ func OperaciónConArreglos(A []int, B []int) (union []int, interseccion []int) {
 			}
 		}
 	}
+	//fmt.Print(union, interseccion)
 	return union, interseccion
 }
