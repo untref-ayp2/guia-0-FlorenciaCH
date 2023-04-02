@@ -15,17 +15,28 @@ func SumarEnteros(numeros ...int) {
 //2. Escribir una función que reciba dos arreglos (que representan vectores) del mismo tamaño
 //y devuelvan la suma y el producto escalar de los vectores
 
-/*func CalculoConVectores(numeros... int,B... int) (int,int){
-	var suma int
-	var ProductoEscalar int
-	for i:= 0; i < len(A); i++ {
-		for j:= 0; j <= i; j++{
-			suma = suma + (A[i]+B[j])
-		}
+func CalculoConVectores(A []int, B []int) (suma []int, producto int) {
+	suma = make([]int, len(A))
+	for i := 0; i < len(A); i++ {
+		suma[i] = A[i] + B[i]
+		producto = producto + A[i]*B[i]
 	}
-
-	return suma, ProductoEscalar
-} */
+	return suma, producto
+}
 
 //3. Escribir una función que reciba dos arreglos A y B, de N y M elementos respectivamente que representan conjuntos de enteros y
 //devuelva una arreglo con la unión y otro con la intersección de A y B.
+
+func OperaciónConArreglos(A []int, B []int) (union []int, interseccion []int) {
+
+	union = append(A, B...)
+
+	for _, primerElementoA := range A {
+		for _, primerElementoB := range B {
+			if primerElementoA == primerElementoB {
+				interseccion = append(interseccion, primerElementoA)
+			}
+		}
+	}
+	return union, interseccion
+}

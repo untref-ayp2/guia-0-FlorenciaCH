@@ -1,6 +1,8 @@
 package main
 
-import Arreglos "guia-0-FlorenciaCH/Funciones/Guia0/Arreglos"
+import (
+	Arreglos "guia-0-FlorenciaCH/Funciones/Guia0/Arreglos"
+)
 
 func main() {
 
@@ -12,5 +14,8 @@ func main() {
 	//Estructuras.CalcularProducto(90, 8)
 	//Estructuras.ValidarSiEsPrimo(1)
 	//Estructuras.ValidarSiEsPrimo(11)
-	Arreglos.SumarEnteros(1, -2, 3, 4, 5, 7, -9)
+	//Arreglos.SumarEnteros(1, -2, 3, 4, 5, 7, -9)
+	arreglo1 := []int{1, 2, 3}
+	arreglo2 := []int{3, 4, 6}
+	Arreglos.CalculoConVectores(arreglo1, arreglo2)
 }
