@@ -1,7 +1,8 @@
 package pointers
 
-func swap1(px, py *int) (int, int) {
+func swap(px, py *int) {
+	var temp int
+	temp = *px
 	*px = *py
-	*py = *px
-	return *py, *px
+	*py = temp
 }
